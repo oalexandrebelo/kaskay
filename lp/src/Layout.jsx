@@ -13,6 +13,9 @@ const navLinks = [
   { label: "Contato", href: "#contato" },
 ];
 
+const PORTAL_URL = import.meta.env.VITE_PORTAL_URL || '#';
+const WHATSAPP_URL = import.meta.env.VITE_WHATSAPP_URL || '#';
+
 export default function Layout({ children }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -73,7 +76,7 @@ export default function Layout({ children }) {
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
               <a
-                href="https://app.flaviofaria.online"
+                href="{PORTAL_URL}"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -90,7 +93,7 @@ export default function Layout({ children }) {
                 </Button>
               </a>
               <a
-                href="https://wa.me/5511999999999"
+                href="{WHATSAPP_URL}"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -137,7 +140,7 @@ export default function Layout({ children }) {
                 ))}
                 <hr className="my-4 border-slate-100" />
                 <a
-                  href="https://app.flaviofaria.online"
+                  href="{PORTAL_URL}"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-3 rounded-xl text-emerald-700 bg-emerald-50 font-semibold"
@@ -147,7 +150,7 @@ export default function Layout({ children }) {
                   Portal do Colaborador
                 </a>
                 <a
-                  href="https://wa.me/5511999999999"
+                  href="{WHATSAPP_URL}"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"

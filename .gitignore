@@ -41,3 +41,11 @@ yarn-error.log*
 
 # Supabase
 supabase/.temp/
+
+# Dados originais / arquivos de trabalho locais
+_dados/
+*.zip
+*.pdf
+
+# Agentes de desenvolvimento (Claude)
+.agent/
