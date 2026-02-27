@@ -76,7 +76,7 @@ export default function Layout({ children }) {
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
               <a
-                href="{PORTAL_URL}"
+                href={PORTAL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -93,7 +93,7 @@ export default function Layout({ children }) {
                 </Button>
               </a>
               <a
-                href="{WHATSAPP_URL}"
+                href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -140,7 +140,7 @@ export default function Layout({ children }) {
                 ))}
                 <hr className="my-4 border-slate-100" />
                 <a
-                  href="{PORTAL_URL}"
+                  href={PORTAL_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-3 rounded-xl text-emerald-700 bg-emerald-50 font-semibold"
@@ -150,7 +150,7 @@ export default function Layout({ children }) {
                   Portal do Colaborador
                 </a>
                 <a
-                  href="{WHATSAPP_URL}"
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
